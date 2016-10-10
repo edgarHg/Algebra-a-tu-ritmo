@@ -1,0 +1,17 @@
+body{
+	background-color: #E3F2FD;
+}
+.contenedor{
+	width: 960px;
+}
+
+@media screen and (min-width: 737px){
+	.contenedor {
+	    width: 1200px;
+	}
+}
+@media screen and (max-width: 1200px) and (min-width: 737px){
+	.contenedor {
+	    width: 1000px;
+	}
+}
