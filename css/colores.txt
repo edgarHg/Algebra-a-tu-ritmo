@@ -1,0 +1,11 @@
+Primarios
+Cyan	#00BCD4
+50	#E0F7FA
+100	#B2EBF2
+200	#80DEEA
+
+Secundarios
+Grey	#9E9E9E
+700	#616161
+800	#424242
+900	#212121
