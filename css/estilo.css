@@ -1,5 +1,31 @@
 body{
 	background-color: #E3F2FD;
+	font-family: 'Ubuntu-L';
+}
+
+h1{
+  font-size: 2em;
+  font-family: 'Ubuntu-M';
+}
+h2{
+  font-size: 1.8em;
+  font-family: 'Ubuntu-M';
+}
+h3{
+  font-size: 1.6em;
+  font-family: 'Ubuntu-R';
+}
+h4,li{
+  font-size: 1.4em;
+  font-family: 'Ubuntu-R';
+}
+h5{
+  font-size: 1.2em;
+  font-family: 'Ubuntu-L';
+}
+h6, p, label, span{
+  font-size: 1em;
+  font-family: 'Ubuntu-L';
 }
 
 header{
@@ -34,8 +60,8 @@ header nav.menu ul li{
 header section.banner{
 	width:960px;
 	height: 215px;
-	background: gray;
 	margin-top: 20px;
+	border: 1px solid #9E9E9E;
 }
 
 /* Contenedor*/
@@ -78,4 +104,3 @@ header section.banner{
 		width: 1200px;
 	}
 }
-
