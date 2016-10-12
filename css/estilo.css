@@ -3,8 +3,7 @@
 	width: extend-to-zoom;
 }
 
-html,
-body {
+html, body {
 	height: 100%;
 	background-color: #FAFAFA;
 	font-family: 'Ubuntu-L';
@@ -89,19 +88,22 @@ header section.banner{
 
 /* Contenedor*/
 .contenedor{
-	width: 960px;
 	/*background: rgba(255, 255, 255, 0.5);*/
 	margin: 10px auto;
 }
-
-.contenedor .columna-4{
+.contenedor-1{
+	width: 100%;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+}
+.contenedor .contenedor-1 .columna-4{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 20px 0;
+	margin:auto;
 }
 
-.contenedor .columna-4 article{
+.contenedor .contenedor-1 .columna-4 article{
 	/*background-color: #eee;*/
 	display: flex;
 	flex-direction: column;
@@ -110,14 +112,14 @@ header section.banner{
 	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.55);*/
 }
 
-.contenedor .columna-4 article img{
+.contenedor .contenedor-1 .columna-4 article img{
 	/*border:5px solid #212121;*/
 	width:100%;
 	max-width: 294px;
 	margin: auto;
 }
 
-.contenedor .columna-4 article p {
+.contenedor .contenedor-1 .columna-4 article p {
 	font-variant: small-caps;
 	line-height: 1.2;
 	margin-top: 10px;
@@ -130,10 +132,10 @@ header section.banner{
 	header section.banner{
 		width:100%;
 	}
-	.contenedor {
+	.contenedor .contenedor-1 .columna-4{
 		width: 100%;
 	}
-	.contenedor .columna-4 article{
+	.contenedor .contenedor-1  .columna-4 article{
 		width: 90%;
 		margin: 5% auto;
 	}
@@ -147,13 +149,13 @@ header section.banner{
 	header section.banner{
 		width:100%;
 	}
-	.contenedor {
+	.contenedor .contenedor-1 .columna-4{
 		width: 100%;
 	}
-	.contenedor .columna-4{
+	.contenedor .contenedor-1  .columna-4{
 		justify-content: space-around;
 	}
-	.contenedor .columna-4 article{
+	.contenedor .contenedor-1  .columna-4 article{
 		width: 46%;
 		margin: 10px;
 	}
@@ -165,7 +167,7 @@ header section.banner{
 	header section.banner{
 		width:95%;
 	}
-	.contenedor {
+	.contenedor .contenedor-1 .columna-4{
 		width: 95%;
 	}
 }
@@ -177,7 +179,7 @@ header section.banner{
 	header section.banner{
 		width:100%;
 	}
-	.contenedor {
+	.contenedor .contenedor-1 .columna-4{
 		width: 100%;
 	}
 }
@@ -189,7 +191,7 @@ header section.banner{
 	header section.banner{
 		width:1280px;
 	}
-	.contenedor {
+	.contenedor .contenedor-1 .columna-4{
 		width: 1280px;
 	}
 }
