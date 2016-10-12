@@ -1,11 +1,13 @@
-body{
+html,
+body {
+	height: 100%;
 	background-color: #E3F2FD;
 	font-family: 'Ubuntu-L';
 }
 
 h1{
   font-size: 2em;
-  font-family: 'Ubuntu-M';
+	font-family: 'Ubuntu-M';
 }
 h2{
   font-size: 1.8em;
@@ -29,10 +31,16 @@ h6, p, label, span{
 }
 
 header{
-	background-color: #B2EBF2;
-	height: 350px;
+	height: 350px !important;
 	flex-direction: column;
 	align-items: center;
+	background: #09f;
+	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwOTlmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ1ZDFmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+	background-size: 100%;
+	background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #80D8FF), color-stop(100%, #E3F2FD));
+	background-image: -moz-linear-gradient(bottom, #80D8FF, #E3F2FD);
+	background-image: -webkit-linear-gradient(bottom, #80D8FF, #E3F2FD);
+	background-image: linear-gradient(to top, #80D8FF, #E3F2FD);
 }
 
 /* Logo */
@@ -45,7 +53,7 @@ header figure.logo{
 header nav.menu{
 	height: 60px;
 	width: 960px;
-	border-bottom: 1px solid #424242;
+	background: rgba(255, 255, 255, 0.25);
 }
 header nav.menu ul{
 	width:100%;
@@ -61,13 +69,16 @@ header section.banner{
 	width:960px;
 	height: 215px;
 	margin-top: 20px;
-	border: 1px solid #9E9E9E;
+	background-image: url('../img/banner-math.jpg');
+
+
 }
 
 /* Contenedor*/
 .contenedor{
 	width: 960px;
 }
+
 
 @media screen and (max-width: 736px){
 	header nav.menu{
