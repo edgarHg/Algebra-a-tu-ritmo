@@ -19,6 +19,7 @@ h2{
   font-family: 'Ubuntu-M';
 }
 h3{
+  margin: 0 0 0.25em 0;
   font-size: 1.6em;
   font-family: 'Ubuntu-R';
 }
@@ -27,11 +28,13 @@ h4,li{
   font-family: 'Ubuntu-R';
 }
 h5{
+  color: #2979FF;
   font-size: 1.2em;
   font-family: 'Ubuntu-L';
+  margin: 0 0 2em 0;
 }
 h6, p, label, span{
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: 'Ubuntu-L';
 }
 
@@ -81,19 +84,19 @@ header section.banner{
 	width:960px;
 	height: 215px;
 	margin-top: 20px;
-	background-image: url('../img/banner-math.jpg');
-
-
+	background-image: url('../images/banner-math.jpg');
 }
 
 /* Contenedor*/
 .contenedor{
-	/*background: rgba(255, 255, 255, 0.5);*/
-	margin: 10px auto;
+	margin: 10px auto 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 .contenedor-1{
-	width: 100%;
 	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+	width: 100%;
+	z-index: 999;
 }
 .contenedor .contenedor-1 .columna-4{
 	display: flex;
@@ -102,7 +105,6 @@ header section.banner{
 	padding: 20px 0;
 	margin:auto;
 }
-
 .contenedor .contenedor-1 .columna-4 article{
 	/*background-color: #eee;*/
 	display: flex;
@@ -111,18 +113,101 @@ header section.banner{
 	/*padding: 1%;
 	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.55);*/
 }
-
 .contenedor .contenedor-1 .columna-4 article img{
 	/*border:5px solid #212121;*/
 	width:100%;
 	max-width: 294px;
 	margin: auto;
 }
-
 .contenedor .contenedor-1 .columna-4 article p {
 	font-variant: small-caps;
 	line-height: 1.2;
 	margin-top: 10px;
+}
+
+
+.contenedor-2{
+	width: 100%;
+	background-color: #EEEEEE;
+}
+.contenedor .contenedor-2 .columna-3{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	margin:10px auto;
+}
+.contenedor .contenedor-2 .columna-3 article{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+	padding: 15px;
+	background-color: #FAFAFA;
+}
+.contenedor .contenedor-2 .columna-3 article p{
+	font-variant: small-caps;
+	line-height: 1.2;
+	margin-top: 20px;
+}
+
+.contenedor .contenedor-2 .columna-3 article ul{
+	list-style: none;
+}
+
+.contenedor .contenedor-2 .columna-3 article ul li{
+	margin: 0 0 0.8em 0;
+	font-family: 'Ubuntu-L';
+	font-variant: small-caps;
+	border-bottom: 1px solid #EEE;
+	padding: 10px;
+
+}
+.contenedor .contenedor-2 .columna-3 article section.lista-mejores-libros{
+	display: flex;
+	flex-direction: column;
+}
+.contenedor .contenedor-2 .columna-3 article section.lista-mejores-libros .detalle-libros{
+	width: 100%;
+	height: 77px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 10px 0;
+}
+.contenedor .contenedor-2 .columna-3 article section.lista-mejores-libros .detalle-libros img{
+	width: 100%;
+	max-width: 70px;
+}
+
+.contenedor .contenedor-2 .columna-3 article section.lista-mejores-libros .detalle-libros div.informacion{
+	 padding: 0 20px;
+ }
+
+.contenedor .contenedor-2 .columna-3 article section.lista-mejores-libros .detalle-libros div.informacion h5{
+	 margin: 0 0 0.5em 0;
+ }
+
+.contenedor .contenedor-2 .columna-3 article section.lista-mejores-libros .detalle-libros div.informacion p{
+	margin: 0 0 0.5em 0;
+}
+
+/* Footer */
+footer{
+	background-color: #EEEEEE;
+	border-top: solid 1px #B5BEC3;
+	box-shadow: inset 0px 1px 0px 0px #E0E4E7;
+	text-align: center;
+	padding: 50px 0 20px 0;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.25);
+	width: 100%;
+	color: rgba(0,0,0,0.7);
+}
+
+footer h6{
+	text-align: center;
+	display: block;
+	width: 100%;
 }
 
 @media screen and (max-width: 320px){
@@ -191,7 +276,8 @@ header section.banner{
 	header section.banner{
 		width:1280px;
 	}
-	.contenedor .contenedor-1 .columna-4{
+	.contenedor .contenedor-1 .columna-4,
+	.contenedor .contenedor-2 .columna-3{
 		width: 1280px;
 	}
 }
